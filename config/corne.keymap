@@ -130,11 +130,11 @@
 
         DVRK {
             bindings = <
-&kp ESC    &kp SEMI      &kp COMMA   &kp DOT           &kp P        &kp Y           &kp UP_ARROW     &kp F         &kp G         &kp C            &kp R       &kp L        &kp BSPC
-&kp RCTRL  &hm LSHIFT A  &hm LALT O  &hm LEFT_GUI E    &hm LCTRL U  &kp I           &kp DOWN_ARROW   &kp D         &hm RCTRL H   &hm RIGHT_GUI T  &hm RALT N  &hm RSHFT S  &kp RET
-&kp LSHFT  &kp SQT       &kp Q       &kp J             &kp K        &kp X           &kp LEFT_ARROW   &kp B         &kp M         &kp W            &kp V       &kp Z        &kp TAB
-                         &to 5       &ltq 1 BACKSPACE  &ltq 3 TAB   &ltq 2 SPACE    &kp RIGHT_ARROW  &ltq 2 SPACE  &ltq 3 ENTER  &ltq 6 DELETE
-                                                                                    &to 6
+&kp TAB    &kp SEMI      &kp COMMA   &kp DOT          &kp P         &kp Y               &kp UP_ARROW     &kp F         &kp G         &kp C            &kp R       &kp L        &kp BSPC
+&kp RCTRL  &hm LSHIFT A  &hm LALT O  &hm LEFT_GUI E   &hm LCTRL U   &kp I               &kp DOWN_ARROW   &kp D         &hm RCTRL H   &hm RIGHT_GUI T  &hm RALT N  &hm RSHFT S  &kp RET
+&kp LSHFT  &kp SQT       &kp Q       &kp J            &kp K         &kp X               &kp LEFT_ARROW   &kp B         &kp M         &kp W            &kp V       &kp Z        &kp ESCAPE
+                         &to 5       &ltq 1 LEFT_GUI  &ltq 2 SPACE  &ltq 3 BACKSPACE    &kp RIGHT_ARROW  &ltq 2 ENTER  &ltq 3 SPACE  &ltq 6 DELETE
+                                                                                        &to 6
             >;
 
             label = "drvk";
@@ -156,33 +156,33 @@
 
         Symbol {
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH  &kp DOLLAR  &kp PERCENT       &trans  &kp LCTRL  &kp AMPERSAND    &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp ESCAPE       &kp CAPSLOCK  &kp HOME  &kp END     &kp UNDERSCORE    &trans  &kp MINUS  &kp RIGHT_SHIFT  &kp PAGE_UP            &kp PAGE_DOWN         &kp INSERT             &trans
-&trans  &kp BACKSPACE    &trans        &trans    &trans      &kp TILDE         &trans  &kp GRAVE  &as PLUS EQUAL   &as DOUBLE_QUOTES SQT  &as PIPE BACKSLASH    &kp DELETE             &trans
-                         &trans        &trans    &trans      &trans            &trans  &trans     &trans           &trans
-                                                                               &trans
+&trans  &kp TILDE        &kp CARET  &trans    &kp QUESTION  &kp PIPE    &trans  &kp AT     &kp PERCENT  &trans    &kp DOLLAR  &kp SLASH       &trans
+&trans  &kp PLUS         &kp LBKT   &kp LBRC  &kp LPAR      &kp AMPS    &trans  &kp EQUAL  &kp RPAR     &kp RBRC  &kp RBKT    &kp MINUS       &trans
+&trans  &kp EXCLAMATION  &trans     &trans    &trans        &kp HASH    &trans  &kp GRAVE  &trans       &trans    &trans      &kp UNDERSCORE  &trans
+                         &trans     &trans    &trans        &trans      &trans  &trans     &trans       &trans
+                                                                        &trans
             >;
 
             label = "Symbol";
         };
 
-        Modify {
+        NUM {
             bindings = <
-&kp LG(Q)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5        &trans  &kp NUMBER_6       &kp NUMBER_7     &kp NUMBER_8       &kp NUMBER_9   &kp NUMBER_0   &trans
-&trans     &kp LG(A)     &kp LG(S)     &kp LG(D)     &kp LG(F)     &kp LEFT_BRACKET    &trans  &kp RIGHT_BRACKET  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &trans
-&trans     &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LEFT_BRACE      &trans  &kp RIGHT_BRACE    &kp F1           &kp F2             &kp F3         &kp F4         &trans
-                         &trans        &trans        &trans        &trans              &trans  &trans             &trans           &trans
-                                                                                       &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &trans  &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &trans  &kp LEFT_ARROW  &kp UP        &kp DOWN      &kp RIGHT     &trans        &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans          &trans        &trans        &trans        &trans        &trans
+                      &trans        &trans        &trans        &trans          &trans  &trans          &trans        &trans
+                                                                                &trans
             >;
 
-            label = "Modify";
+            label = "num";
         };
 
         Flash {
             bindings = <
 &flash_macro  &trans  &trans  &trans  &trans  &trans    &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
 &trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans        &trans        &trans        &trans
-&trans        &trans  &trans  &trans  &trans  &trans    &trans  &bt BT_CLR    &trans        &trans        &trans        &trans        &bt BT_CLR_ALL
+&to 7         &to 0   &trans  &trans  &trans  &trans    &trans  &bt BT_CLR    &trans        &trans        &trans        &trans        &bt BT_CLR_ALL
                       &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans
                                                         &trans
             >;
@@ -219,11 +219,11 @@
         QWERTY {
             label = "Qwerty";
             bindings = <
-&as TILDE GRAVE  &kp Q           &kp W           &kp E               &kp R             &kp T           &kp UP_ARROW     &kp Y         &kp U              &kp I                &kp O                    &kp P                &as PLUS EQUAL
-&kp CAPSLOCK     &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G           &kp DOWN_ARROW   &kp H         &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L          &as COLON SEMICOLON  &as DOUBLE_QUOTES SQT
-&kp LEFT_SHIFT   &kp Z           &kp X           &kp C               &kp V             &kp B           &kp LEFT_ARROW   &kp N         &kp M              &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH   &kp ENTER
-                                 &to 5           &ltq 1 BACKSPACE    &ltq 3 TAB        &ltq 2 SPACE    &kp RIGHT_ARROW  &ltq 2 SPACE  &ltq 3 ENTER       &ltq 6 DELETE
-                                                                                                       &to 6
+&trans  &kp Q         &kp W           &kp E       &kp R        &kp T     &kp UP_ARROW     &kp Y   &kp U        &kp I                &kp O                    &kp P                 &trans
+&trans  &hm LSHIFT A  &hm LEFT_ALT S  &hm LGUI D  &hm LCTRL F  &kp G     &kp DOWN_ARROW   &kp H   &hm RCTRL J  &hm RGUI K           &hm RIGHT_ALT L          &hm RSHIFT SEMICOLON  &trans
+&trans  &kp Z         &kp X           &kp C       &kp V        &kp B     &kp LEFT_ARROW   &kp N   &kp M        &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH    &trans
+                      &to 5           &trans      &trans       &trans    &kp RIGHT_ARROW  &trans  &trans       &trans
+                                                                         &to 6
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;

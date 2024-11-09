@@ -41,7 +41,7 @@ layers:
   - Z
   - $$mdi:keyboard-esc$$
   - {t: Rgb, h: toggle}
-  - {t: '$$mdi:apple-keyboard-command$$', h: Navi}
+  - LGUI
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:symbol$$'}
   - {t: '$$mdi:backspace$$', h: NUM}
   - $$mdi:arrow-right-bold$$
@@ -90,7 +90,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -103,13 +103,13 @@ layers:
   - '~'
   - ^
   - {t: '$$mdi:transfer$$', type: trans}
-  - '?'
+  - $
   - '|'
   - {t: '$$mdi:transfer$$', type: trans}
   - '@'
   - '%'
   - {t: '$$mdi:transfer$$', type: trans}
-  - $
+  - '?'
   - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}

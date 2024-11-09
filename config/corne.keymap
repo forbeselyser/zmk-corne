@@ -130,11 +130,11 @@
 
         DVRK {
             bindings = <
-&kp TAB    &kp SEMI      &kp COMMA   &kp DOT          &kp P         &kp Y               &kp UP_ARROW     &kp F         &kp G         &kp C            &kp R       &kp L        &kp BSPC
-&kp RCTRL  &hm LSHIFT A  &hm LALT O  &hm LEFT_GUI E   &hm LCTRL U   &kp I               &kp DOWN_ARROW   &kp D         &hm RCTRL H   &hm RIGHT_GUI T  &hm RALT N  &hm RSHFT S  &kp RET
-&kp LSHFT  &kp SQT       &kp Q       &kp J            &kp K         &kp X               &kp LEFT_ARROW   &kp B         &kp M         &kp W            &kp V       &kp Z        &kp ESCAPE
-                         &to 5       &ltq 1 LEFT_GUI  &ltq 2 SPACE  &ltq 3 BACKSPACE    &kp RIGHT_ARROW  &ltq 2 ENTER  &ltq 3 SPACE  &ltq 6 DELETE
-                                                                                        &to 6
+&kp TAB    &kp SEMI      &kp COMMA   &kp DOT         &kp P         &kp Y               &kp UP_ARROW     &kp F         &kp G         &kp C            &kp R       &kp L        &kp BSPC
+&kp RCTRL  &hm LSHIFT A  &hm LALT O  &hm LEFT_GUI E  &hm LCTRL U   &kp I               &kp DOWN_ARROW   &kp D         &hm RCTRL H   &hm RIGHT_GUI T  &hm RALT N  &hm RSHFT S  &kp RET
+&kp LSHFT  &kp SQT       &kp Q       &kp J           &kp K         &kp X               &kp LEFT_ARROW   &kp B         &kp M         &kp W            &kp V       &kp Z        &kp ESCAPE
+                         &to 5       &kp LGUI        &ltq 2 SPACE  &ltq 3 BACKSPACE    &kp RIGHT_ARROW  &ltq 2 ENTER  &ltq 3 SPACE  &ltq 6 DELETE
+                                                                                       &to 6
             >;
 
             label = "drvk";
@@ -156,11 +156,11 @@
 
         Symbol {
             bindings = <
-&trans  &kp TILDE        &kp CARET  &trans    &kp QUESTION  &kp PIPE    &trans  &kp AT     &kp PERCENT  &trans    &kp DOLLAR  &kp SLASH       &trans
-&trans  &kp PLUS         &kp LBKT   &kp LBRC  &kp LPAR      &kp AMPS    &trans  &kp EQUAL  &kp RPAR     &kp RBRC  &kp RBKT    &kp MINUS       &trans
-&trans  &kp EXCLAMATION  &trans     &trans    &trans        &kp HASH    &trans  &kp GRAVE  &trans       &trans    &trans      &kp UNDERSCORE  &trans
-                         &trans     &trans    &trans        &trans      &trans  &trans     &trans       &trans
-                                                                        &trans
+&trans  &kp TILDE        &kp CARET  &trans    &kp DOLLAR  &kp PIPE    &trans  &kp AT     &kp PERCENT  &trans    &kp QUESTION  &kp SLASH       &trans
+&trans  &kp PLUS         &kp LBKT   &kp LBRC  &kp LPAR    &kp AMPS    &trans  &kp EQUAL  &kp RPAR     &kp RBRC  &kp RBKT      &kp MINUS       &trans
+&trans  &kp EXCLAMATION  &trans     &trans    &trans      &kp HASH    &trans  &kp GRAVE  &trans       &trans    &trans        &kp UNDERSCORE  &trans
+                         &trans     &trans    &trans      &trans      &trans  &trans     &trans       &trans
+                                                                      &trans
             >;
 
             label = "Symbol";
